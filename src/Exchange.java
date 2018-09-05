@@ -3,31 +3,31 @@ import java.util.Scanner;
 public class Exchange {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner input=new Scanner(System.in);//ÀÔ·Â ¹Ş±â À§ÇÑ º¯¼ö ¼±¾ğ
-	    int ten_won;//10¿ø Â¥¸® ÇÑÈ­ º¯¼ö
-		int fifty_won;//50¿ø Â¥¸® ÇÑÈ­ º¯¼ö
-		int one_hundred_won;//100¿ø Â¥¸® ÇÑÈ­ º¯¼ö
-		int five_hundred_won;//500¿ø Â¥¸® ÇÑÈ­ º¯¼ö
-		int sum;//Àú±İ ÃÑ¾× º¯¼ö
-		int dollar;//´Ş·¯ ¾×¼ö¸¦ ³ªÅ¸³»´Â º¯¼ö
-		int extra_won;//³²Àº ÇÑÈ­¸¦ ³ªÅ¸³»´Â º¯¼ö
-		final int EXCHANGE_LATE=1060;//È¯À² º¯¼ö¸¦ ÇÁ·Î±×·¥ ³»¿¡¼­ »ó¼ö·Î ¼±¾ğ(´Ş·¯´ç 1060¿ø)
+		Scanner input=new Scanner(System.in);//ì…ë ¥ ë°›ê¸° ìœ„í•œ ë³€ìˆ˜ ì„ ì–¸
+	        int ten_won;//10ì› ì§œë¦¬ í•œí™” ë³€ìˆ˜
+		int fifty_won;//50ì› ì§œë¦¬ í•œí™” ë³€ìˆ˜
+		int one_hundred_won;//100ì› ì§œë¦¬ í•œí™” ë³€ìˆ˜
+		int five_hundred_won;//500ì› ì§œë¦¬ í•œí™” ë³€ìˆ˜
+		int sum;//ì €ê¸ˆ ì´ì•¡ ë³€ìˆ˜
+		int dollar;//ë‹¬ëŸ¬ ì•¡ìˆ˜ë¥¼ ë‚˜íƒ€ë‚´ëŠ” ë³€ìˆ˜
+		int extra_won;//ë‚¨ì€ í•œí™”ë¥¼ ë‚˜íƒ€ë‚´ëŠ” ë³€ìˆ˜
+		final int EXCHANGE_LATE=1060;//í™˜ìœ¨ ë³€ìˆ˜ë¥¼ í”„ë¡œê·¸ë¨ ë‚´ì—ì„œ ìƒìˆ˜ë¡œ ì„ ì–¸(ë‹¬ëŸ¬ë‹¹ 1060ì›)
 		
-		System.out.println("500¿ø °³¼ö ÀÔ·Â:");//500¿ø Â¥¸® ÇÑÈ­ °¹¼ö ÀÔ·Â
+		System.out.println("500ì› ê°œìˆ˜ ì…ë ¥:");//500ì› ì§œë¦¬ í•œí™” ê°¯ìˆ˜ ì…ë ¥
 		five_hundred_won=input.nextInt();
-		System.out.println("100¿ø °³¼ö ÀÔ·Â:");//100¿ø Â¥¸® ÇÑÈ­ °¹¼ö ÀÔ·Â
+		System.out.println("100ì› ê°œìˆ˜ ì…ë ¥:");//100ì› ì§œë¦¬ í•œí™” ê°¯ìˆ˜ ì…ë ¥
 		one_hundred_won=input.nextInt();
-		System.out.println("50¿ø °³¼ö ÀÔ·Â:");//50¿ø Â¥¸® ÇÑÈ­ °¹¼ö ÀÔ·Â
+		System.out.println("50ì› ê°œìˆ˜ ì…ë ¥:");//50ì› ì§œë¦¬ í•œí™” ê°¯ìˆ˜ ì…ë ¥
 		fifty_won=input.nextInt();
-		System.out.println("10¿ø °³¼ö ÀÔ·Â:");//10¿ø Â¥¸® ÇÑÈ­ °¹¼ö ÀÔ·Â
+		System.out.println("10ì› ê°œìˆ˜ ì…ë ¥:");//10ì› ì§œë¦¬ í•œí™” ê°¯ìˆ˜ ì…ë ¥
 		ten_won=input.nextInt();
 		
-		sum=(five_hundred_won*500)+(one_hundred_won*100)+(fifty_won*50)+(ten_won*10);//Àú±İ ÃÑ¾×À» °è»êÇÏ´Â °úÁ¤
-		dollar=sum/EXCHANGE_LATE;//È¯ÀüÇÏ¿© ¾ò°Ô µÇ´Â ´Ş·¯ ¾×¼ö¸¦ °è»êÇÏ´Â °úÁ¤
-		extra_won=sum-(EXCHANGE_LATE*dollar);//´Ş·¯·Î È¯ÀüÇÏ°í ³²°Ô µÇ´Â ÇÑÈ­¸¦ °è»êÇÏ´Â °úÁ¤
+		sum=(five_hundred_won*500)+(one_hundred_won*100)+(fifty_won*50)+(ten_won*10);//ì €ê¸ˆ ì´ì•¡ì„ ê³„ì‚°í•˜ëŠ” ê³¼ì •
+		dollar=sum/EXCHANGE_LATE;//í™˜ì „í•˜ì—¬ ì–»ê²Œ ë˜ëŠ” ë‹¬ëŸ¬ ì•¡ìˆ˜ë¥¼ ê³„ì‚°í•˜ëŠ” ê³¼ì •
+		extra_won=sum-(EXCHANGE_LATE*dollar);//ë‹¬ëŸ¬ë¡œ í™˜ì „í•˜ê³  ë‚¨ê²Œ ë˜ëŠ” í•œí™”ë¥¼ ê³„ì‚°í•˜ëŠ” ê³¼ì •
 		
-		System.out.println("Àú±İ ÃÑ¾× = "+sum);//Àú±İ ÃÑ¾× Ãâ·Â
-		System.out.println("´Ş·¯ ¾×¼ö = "+dollar);//´Ş·¯ ¾×¼ö Ãâ·Â
-		System.out.println("³²Àº ÇÑÈ­ = "+extra_won);//³²Àº ÇÑÈ­ Ãâ·Â
+		System.out.println("ì €ê¸ˆ ì´ì•¡ = "+sum);//ì €ê¸ˆ ì´ì•¡ ì¶œë ¥
+		System.out.println("ë‹¬ëŸ¬ ì•¡ìˆ˜ = "+dollar);//ë‹¬ëŸ¬ ì•¡ìˆ˜ ì¶œë ¥
+		System.out.println("ë‚¨ì€ í•œí™” = "+extra_won);//ë‚¨ì€ í•œí™” ì¶œë ¥
 	}
 }
